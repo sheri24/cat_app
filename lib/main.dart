@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         future: _initialization,
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            print('Snapshot has error');
+            print('Snapshot has error ');
           } else if (snapshot.connectionState == ConnectionState.waiting) {
             return Container(
               color: Colors.white,
